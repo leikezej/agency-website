@@ -1,0 +1,53 @@
+.home__wrapper {
+    margin-top: 2rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.home__title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3.2rem;
+    align-items: center;
+}
+
+.home__subtitle {
+    color: blue;
+    text-align: center;
+    
+}
+
+.carousel__container {
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.services__wrapper {
+    text-align: center;
+}
+
+.services__title {
+    font-size: 6rem;
+    font-weight: bolder;
+    color: -webkit-linear-gradient(bottom, #00d0f9, #0674fd);
+}
+
+.services__subtitle {
+    text-align: center;
+}
+
+mark {
+    color:#00d0f9;
+    background: none;
+    font-style: italic;
+    
+}
+
+.services__card {
+    margin-top: 1.5rem;
+}
+
+.cardss {
+    border: 1px solid #000;
+
+}
