@@ -8,6 +8,7 @@ import ServiceSlider from "../Slider/ServiceSlider";
 
 import Technology from "../../pages/Technology/Technology";
 import Office from "../../components/Office/Office";
+import Industry from "../Industry/Industry";
 // import Card from "../../components/Card/Card";
 // import Articles from "../../utils/Articles/Articles";
 
@@ -23,6 +24,7 @@ const Home = () => {
         <Portfolio />
         <Office />
         <Technology />
+        <Industry />
     </div>
   )
 }
