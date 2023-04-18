@@ -1,0 +1,11 @@
+.divider {
+    /* border-left: 6px solid green; */
+    height: 50px;
+    /* left: 50%; */
+    /* margin-left: -3px; */
+    top: 0;
+    width: 2.5%;
+    margin: 0 auto;
+    border-bottom: 5px solid blue;
+    background: linear-gradient(to left, red, violet);
+}

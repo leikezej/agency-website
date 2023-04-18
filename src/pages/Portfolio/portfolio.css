@@ -1,0 +1,21 @@
+.portfolio__title {
+    font-size: 6rem;
+    font-weight: bolder;
+    text-align: center;
+    background: -webkit-linear-gradient(#00d0f9, #0674fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.portfolio__subtitle {
+    text-align: center;
+    color: blue;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.portfolio__text {
+    text-align: center;
+    font-size: 1.3rem;
+}
+

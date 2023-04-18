@@ -2,9 +2,13 @@ import React from "react";
 import './home.css';
 
 import Carousel from "./Carousel";
-import Portfolio from "./Portfolio";
-import Services from "./Services";
+import Portfolio from "../Portfolio/Portfolio";
+import Services from "../Services/Services";
+import ServiceSlider from "../Slider/ServiceSlider";
 import Technology from "./Technology";
+
+// import Card from "../../components/Card/Card";
+// import Articles from "../../utils/Articles/Articles";
 
 const Home = () => {
 
@@ -12,6 +16,9 @@ const Home = () => {
     <div className="home__wrapper">
         <Carousel />
         <Services />
+        <br />
+        <br />
+        <ServiceSlider />
         <Portfolio />
         <Technology />
     </div>

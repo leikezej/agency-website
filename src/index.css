@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+mark {
+    /* background: -webkit-linear-gradient(#00d0f9, #0674fd); */
+    /* background: -webkit-linear-gradient(#00d0f9, #0674fd); */
+    font-style: italic;
+    color: #00d0f9;
+    background: none;
+}
+
+.divider {
+  height: 5px;
+  margin-top: 2rem;
+  width: 3%;
+  margin: 0 auto;
+  background: linear-gradient(to left, #00d0f9, #0674fd);
+}
+

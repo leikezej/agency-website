@@ -12,7 +12,7 @@ const Carous = () => {
   return (
     <>
         <h1 className="home__title">
-        A Leading Software Product Studio
+        A Leading Software Product Studio<br />
 for Australia
         </h1>
         <h3 className="home__subtitle">Turning Great Ideas Into Digital Products</h3>
