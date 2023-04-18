@@ -5,8 +5,8 @@ import Carousel from "./Carousel";
 import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import ServiceSlider from "../Slider/ServiceSlider";
-import Technology from "./Technology";
 
+import Technology from "../../pages/Technology/Technology";
 import Office from "../../components/Office/Office";
 // import Card from "../../components/Card/Card";
 // import Articles from "../../utils/Articles/Articles";
