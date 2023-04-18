@@ -6,8 +6,10 @@ const Industry = () => {
   return (
     <div className="industry__wrapper">
         <h1 className="industry__title">Industry</h1>
+       <br />
         <h3>We support you in your <mark>digital journey</mark> with <br />
 our software development expertise in modern methodologies and <mark> best practices. </mark></h3>
+       <br />
         <div className="divider"></div>
 
         <div className="industry__container">
