@@ -1,5 +1,4 @@
 .swiper__container {
-    /* border: 1px solid red; */
     padding: 20px;
     width: 70%;
     margin: 0 auto;
@@ -13,13 +12,11 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  /* box-shadow: 0px 3px 2px 2 px #ccc; */
     border: none;
     box-shadow: 0px 0px 11px 5px #f2f2f2;
 }
 
 .swiper {
-    /* border: 1px solid blue; */
 }
 
 .swiper-slide {
