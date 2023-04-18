@@ -28,3 +28,24 @@ mark {
   background: linear-gradient(to left, #00d0f9, #0674fd);
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* ::-webkit-scrollbar-track {
+  background-color: rgb(0, 214, 0);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+} */
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 54, 232);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

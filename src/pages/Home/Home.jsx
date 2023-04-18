@@ -7,6 +7,7 @@ import Services from "../Services/Services";
 import ServiceSlider from "../Slider/ServiceSlider";
 import Technology from "./Technology";
 
+import Office from "../../components/Office/Office";
 // import Card from "../../components/Card/Card";
 // import Articles from "../../utils/Articles/Articles";
 
@@ -20,6 +21,7 @@ const Home = () => {
         <br />
         <ServiceSlider />
         <Portfolio />
+        <Office />
         <Technology />
     </div>
   )

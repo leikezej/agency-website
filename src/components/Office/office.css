@@ -1,0 +1,21 @@
+.office__wrapper {
+    margin-top: 2rem;
+}
+
+.office__title {
+    text-align: center;
+}
+
+.office__image {
+    margin-top: 2rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.office__image img {
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+}
