@@ -5,9 +5,11 @@ import Carousel from "./Carousel";
 import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import ServiceSlider from "../Slider/ServiceSlider";
-import Technology from "./Technology";
 
+import Technology from "../../pages/Technology/Technology";
+import AboutUs from "../../pages/About/About";
 import Office from "../../components/Office/Office";
+import Industry from "../Industry/Industry";
 // import Card from "../../components/Card/Card";
 // import Articles from "../../utils/Articles/Articles";
 
@@ -23,6 +25,8 @@ const Home = () => {
         <Portfolio />
         <Office />
         <Technology />
+        <Industry />
+        <AboutUs />
     </div>
   )
 }
