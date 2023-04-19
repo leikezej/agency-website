@@ -16,9 +16,8 @@
 
 .tech__title {
    text-align: center;
-   font-size: 1.6rem;
+   font-size: 6rem;
    margin-top: 2rem;
-   font-size: 9rem;
    font-weight: bolder;
    color: #FFF;
 }
@@ -50,6 +49,6 @@
     padding: 5px;
     margin: 5px;
     margin: 0 auto;
-    width: 15%;
+    width: 20%;
     border-radius: 10px;
 }

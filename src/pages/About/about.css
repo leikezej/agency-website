@@ -30,7 +30,7 @@
 .about__right img {
      height: 300px;
      width: 500px;
-     margin-left: 300px;
+     /* margin-left: 100px; */
 }
 
 .about__divider {
