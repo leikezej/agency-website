@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './awards.css';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 
 // Import Swiper styles
