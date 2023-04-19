@@ -15,16 +15,19 @@ const Contact = () => {
               <div className="contact__divider"></div>
              <br />
              <div className="left__box1">
-              <h4>In Australia</h4>
-              <h4>Address:</h4> <address>Level 11/580 Collins St, Melbourne VIC 3000, Australia</address>
-                <h4>Tel:</h4><p>(+61) 414 231 356</p>
-             
+              <h4>In Australia 🇦🇺 </h4>
+              <ul>
+                <li><i className="fa fa-home" />&nbsp;&nbsp;<b>Address:</b>&nbsp;Level 11/580 Collins St, Melbourne VIC 3000, Australia</li>
+                <li><i className="fa fa-fax" />&nbsp;&nbsp;(+61) 414 231 356</li>
+            </ul>
              </div>
              <br />
              <div className="left__box2">
-                <h4>In Viet Nam</h4>
-                <h4>Address:</h4><address>Level 11/580 Collins St, Melbourne VIC 3000, Australia 6Ath Floor, C Tower, Central Point Building, No 219 Trung Kinh Str, Cau Giay Dist, Ha Noi, Vietnam.​</address>
-                <h4>Tel:</h4><p>(+84) 24 6654 2283</p>
+                <h4>In Viet Nam 🇻🇳 </h4>
+                <ul>
+                  <li><i className="fa fa-home" />&nbsp;&nbsp;<b>Address:</b>&nbsp;No 219 Trung Kinh Str, Cau Giay Dist, Ha Noi, Vietnam</li>
+                  <li><i className="fa fa-fax" />&nbsp;&nbsp;(+84) 24 6654 2283</li>
+                </ul>  
              </div>
           </div>
           
