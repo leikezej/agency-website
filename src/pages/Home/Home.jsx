@@ -14,6 +14,7 @@ import Team from "../../pages/Team/Team";
 import Know from "../../components/Know/Know";
 import Testimonial from "../Testimonial/Testimonial";
 import Ideas from "../../components/Ideas/Ideas";
+import Awards from "../../components/Awards/Awards";
 
 const Home = () => {
 
@@ -33,6 +34,7 @@ const Home = () => {
         <Know />
         <Ideas />
         <Testimonial />
+        <Awards />
     </div>
   )
 }
