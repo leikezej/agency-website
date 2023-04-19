@@ -1,75 +1,56 @@
-import React, { useState, useEffect } from "react"
-// importing navbar styles
-import "../assets/css/navbar.css"
-import logo from "../assets/images/logo.svg"
-import logoBlue from "../assets/images/logo-blue.svg"
-// responsive menu toggle icon
-import { FaAlignRight } from "react-icons/fa"
-// all the navbar links coming from the links constants
-import pageLinks from "../constants/links"
-// Link from gatsby
-import { Link } from "gatsby"
+
+import React, { useState, Fragment } from 'react'
+import { FaBars } from 'react-icons/fa'; 
+import {
+  Nav,
+  NavContainer, 
+  NavLogo,
+  NavItem,
+  NavLinks,
+  NavMenu,
+  MobileIcon,
+} from './NavbarStyles';
+import '../App.css';
 const Navbar = () => {
-  //navbar scroll when active state
-  const [navbar, setNavbar] = useState(false)
-
-  //logo scroll when active
-  const [navbarLogo, setNavbarLogo] = useState(logo)
-
-  //navbar scroll changeBackground function
-  const changeBackground = () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 66) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
-    }
-  }
-
-  useEffect(() => {
-    changeBackground()
-    // adding the event when scroll change background
-    window.addEventListener("scroll", changeBackground)
-  })
-
-  //logo scroll function
-  const changeLogo = () => {
-    if (window.scrollY >= 60) {
-      setNavbarLogo(logoBlue)
-    } else {
-      setNavbarLogo(logo)
-    }
-  }
-
-  useEffect(() => {
-    changeLogo()
-    // adding the event when scroll change Logo
-    window.addEventListener("scroll", changeLogo)
-  })
-
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
   return (
-    <nav className={navbar ? "navbar active" : "navbar"}>
-      <div className="nav-center">
-        <div className="nav-header">
-          <Link to="/">
-            <img src={navbarLogo} alt="logo" />
-          </Link>
-          <button type="button" className="toggle-btn">
-            <FaAlignRight />
-          </button>
-        </div>
-        <div className="nav-links">
-          {pageLinks.map(links => {
-            return (
-              <Link key={links.id} to={links.url}>
-                {links.text}
-              </Link>
-            )
-          })}
-        </div>
-      </div>
-    </nav>
-  )
+      <Fragment>
+        <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
+           <NavContainer>
+              <NavLogo href="#">GeeksForGeeks</NavLogo>
+              <MobileIcon>
+               <FaBars />
+              </MobileIcon>
+              <NavMenu>
+                <NavItem>
+                  <NavLinks href="#">About</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks href="#">Services</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks href="#">Events</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks href="#">Contact</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks href="#">Sign In</NavLinks>
+                </NavItem>
+              </NavMenu>
+           </NavContainer>
+        </Nav>
+      </Fragment>
+    )
 }
-
-export default Navbar
+  
+export default Navbar;
