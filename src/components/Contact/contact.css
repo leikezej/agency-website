@@ -78,10 +78,6 @@
     text-align: center;
     justify-content: center;
     border-radius: 5px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
     display: flex;
 }
 

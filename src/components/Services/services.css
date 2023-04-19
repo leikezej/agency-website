@@ -66,6 +66,8 @@
 }
 
 .card__wrappers:hover {
+  padding: 5rem;
+  margin: 5rem;
   background: linear-gradient(to top, #00d0f9, #0674fd);
 }
 
