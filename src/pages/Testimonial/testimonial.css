@@ -1,0 +1,22 @@
+.testimonial__wrapper {
+    /* border: 1px solid red; */
+}
+
+.testimonial__title {
+      font-size: 6rem;
+  font-weight: bolder;
+  text-align: center;
+  background: -webkit-linear-gradient(#00d0f9, #0674fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonial__subtitle {
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.testimonial__text {
+    text-align: center;
+}
