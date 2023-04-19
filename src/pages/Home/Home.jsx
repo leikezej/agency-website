@@ -11,6 +11,7 @@ import AboutUs from "../../pages/About/About";
 import Office from "../../components/Office/Office";
 import Industry from "../Industry/Industry";
 import Team from "../../pages/Team/Team";
+import Know from "../../components/Know/Know";
 
 const Home = () => {
 
@@ -27,6 +28,7 @@ const Home = () => {
         <Industry />
         <AboutUs />
         <Team />
+        <Know />
     </div>
   )
 }
