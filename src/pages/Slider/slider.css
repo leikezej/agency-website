@@ -1,11 +1,13 @@
-.swiper__container {
-    padding: 20px;
+.slider__container {
+    padding: 10px;
     width: 70%;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
-.swiper__card {
+.slider__card {
     height: 35vh;
+    width: 20%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -13,13 +15,14 @@
     -o-border-radius: 10px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     border: none;
+    /* background: gray; */
     box-shadow: 0px 0px 11px 5px #f2f2f2;
 }
 
-.swiper {
+.slider {
 }
 
-.swiper-slide {
+.slider-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -28,27 +31,27 @@
     align-items: center;
 }
 
-.swiper-slide img {
+.slider-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper__title {
+.slider__title {
     text-align: center;
     align-items: center;
     font-weight: 800;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
 }
 
-.swiper__desc {
+.slider__desc {
     text-align: center;
     align-items: center;
     font-weight: 200;
     padding: 1rem;
 }
 
-.mySwiper {
+.myslider {
 }

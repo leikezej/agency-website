@@ -9,21 +9,21 @@
 .know__title {
     font-weight: bolder;
     font-size: 3rem;
-    margin-top: 4rem;
-    margin-left: 10rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
 }
 
 .know__divider {
     height: 5px;
     width: 3%;
-    margin-left: 10rem;
+    margin-left: 5rem;
     background: linear-gradient(to left, #00d0f9, #0674fd);
 }
 
 .know__details {
     /* justify-content: space-evenly; */
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* border: 1px solid red; */
 }
 
@@ -34,8 +34,8 @@
 }
 
 .know__card img {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 }
 
 .know__card p {
