@@ -1,0 +1,25 @@
+.ideas__wrapper {
+    margin-top: 2rem;
+    background: url('../../assets/bg-video-new.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    opacity: 100;
+    /* backdrop-filter: ; */
+    text-align: center;
+    opacity: 0.8;
+}
+
+.ideas__wrapper h3 {
+    color: #FFF;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.ideas__wrapper h1 {
+    font-size: 2.5rem;
+    color: #FFF;
+}

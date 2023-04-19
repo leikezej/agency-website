@@ -1,5 +1,5 @@
 .tech__wrapper {
-    background: url('../../assets/tech/tech-bg.jpg');
+    background: url('../../assets/testi-bg-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,6 +11,7 @@
     border-radius: 10px;
     filter: grayscale(30%);
     -webkit-filter: grayscale(30%);
+    color: #FFF;
 }
 
 .tech__title {
@@ -19,7 +20,7 @@
    margin-top: 2rem;
    font-size: 9rem;
    font-weight: bolder;
-   /* color: #FFF; */
+   color: #FFF;
 }
 
 .tech__subtitle {
@@ -31,6 +32,7 @@
 }
 
 .tech__text {
+    color: #FFF;
     text-align: center;
     font-size: 4rem;
 }
