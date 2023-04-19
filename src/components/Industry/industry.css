@@ -1,0 +1,53 @@
+.industry__wrapper {
+    text-align: center;
+}
+
+.industry__title {
+    color: blue;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-top: 1.5rem;
+}
+
+.industry__container {
+     margin: 0 auto;
+     margin-top: 2.5rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    justify-content: space-evenly;
+}
+
+.industry__container p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    word-break: break-all;
+}
+
+.industry__card {
+    word-break: break-all;
+}
+
+.industry__card {
+    /* border: 1px solid red; */
+    height: 20vh;
+    /* width: 30%; */
+    padding: 1rem;
+    /* border-right: 1px solid #ccc; */
+}
+
+.industry__card:hover {
+    /*border: none;
+    */border-bottom: 5px solid blue;
+    transition: .3s ease-in-out ;
+    -webkit-transition: .3s ease-in-out ;
+    -moz-transition: .3s ease-in-out ;
+    -ms-transition: .3s ease-in-out ;
+    -o-transition: .3s ease-in-out ;
+}
+
+.industry__card img {
+   height: 50px;
+   width: 50px;
+}
