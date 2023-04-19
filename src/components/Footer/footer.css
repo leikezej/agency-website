@@ -1,38 +1,79 @@
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  .footer__links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.footer__wrapper {
+    background: url("https://mcdn.wallpapersafari.com/medium/66/93/fp9KTs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: no-repeat center/80% url("https://cdn.wallpapersafari.com/54/57/VFmTa6.png"); */
+    /* background: #ffffff url("https://mcdn.wallpapersafari.com/medium/66/93/fp9KTs.jpg") no-repeat right top; */
+    
+    height: 60vh;
     display: flex;
-    justify-content: center;
-  }
-  
-  .footer__links li {
-    margin-right: 20px;
-  }
-  
-  .footer__links li:last-child {
-    margin-right: 0;
-  }
-  
-  .footer__links li a {
-    color: #fff;
+    justify-content: space-between;
+}
+
+.footer__box1 {
+    /* border: 1px solid red; */
+    width: 40%;
+    color: #FFF;
+    font-size: 1rem;
+    margin: 3px;
+    padding: 3px;
+}
+
+.footer__box1 h2 {
+    color: #FFF;
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer__box1 ol li {
     text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .footer__links img {
-    height: 50px;
-    width: 50px;
-  }
+}
+
+.footer__box1 li {
+    font-size: .8rem;
+    padding: 3px;
+    margin: 3px;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.footer__box2 {
+    /* border: 1px solid blue; */
+    width: 40%;
+    margin: 3px;
+    padding: 3px;
+}
+
+.footer__box2 h1 {
+    /* text-align: center; */
+    color: #FFF;
+    text-transform: uppercase;
+    margin-left: 1.6rem;
+}    
+.footer__box2 li {
+    padding: 5px;
+    margin: 5px;
+    color: #FFF;
+    font-size: .9rem;
+    margin-left: 1.5rem;
+}
+
+.footer__box3 {
+    /* border: 1px solid green; */
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer__box3 h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+}
+
+.footer__box3 p {
+    margin-top: 1rem;
+    color: #FFF;
+    margin-left: 1.5rem;
+}
