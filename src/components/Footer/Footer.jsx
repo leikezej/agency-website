@@ -11,14 +11,14 @@ const Footer = () => {
             <ul>
                 <li><i className="fa fa-phone" />&nbsp;&nbsp;Tel: (+61) 414 231 356</li>
                 <li><i className="fa fa-envelope" />&nbsp;&nbsp;contact@powergateaustralia.com</li>
-                <li><i className="fa fa-map-marker" />&nbsp;&nbsp;Level 11/580 Collins St, Melbourne VIC 3000, Australia</li>
+                <li><i className="fa fa-building" />&nbsp;&nbsp;Level 11/580 Collins St, Melbourne VIC 3000, Australia</li>
             </ul>
             
             <h2>IN VIETNAM</h2>
             <ul>
                 <li><i className="fa fa-phone" />&nbsp;&nbsp;Tel: (+84) 24 66542283</li>
                 <li><i className="fa fa-envelope" />&nbsp;&nbsp;contact@powergatevietnam.com</li>
-                <li><i className="fa fa-map-marker" />&nbsp;&nbsp;6Ath Floor, C Tower, Central Point Building, No 219 Trung Kinh Str, Cau Giay Dist, Ha Noi, Vietnam.</li>
+                <li><i className="fa fa-building" />&nbsp;&nbsp;6Ath Floor, C Tower, Central Point Building, No 219 Trung Kinh Str, Cau Giay Dist, Ha Noi, Vietnam.</li>
             </ul>
             
         </div>
