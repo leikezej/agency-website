@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './awards.css';
 
 import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -18,7 +18,7 @@ import awrd5 from "../../assets/awards/awards5.png";
 import awrd6 from "../../assets/awards/awards6.png";
 
 const Awards = () => {
-    const swiper = useSwiper();
+    // const swiper = useSwiper();
     
     const goNext = () => {
         console.log('slide next');
@@ -30,11 +30,11 @@ const Awards = () => {
 
   return (
     <section className="awards__wrapper">
-              <h1 className="awards__title">OUR AWARDS & RECOGNITIONS</h1>
+        <h1 className="awards__title">OUR AWARDS & RECOGNITIONS</h1>
         <h2 className="awards__text">We’re trusted worldwide for our reliable approach and for delivering the best solutions <br />that meet our partners unique business digital objectives.</h2>
         <br />
         <div className="divider"></div>
-        
+
         <div className="awards__container">
         <Swiper
               spaceBetween={50}
@@ -57,11 +57,11 @@ const Awards = () => {
         <br />
         <br />
         </Swiper>
-        <div className="button__wrapper">
+          <div className="button__wrapper">
             <button onClick={goNext}> <i className="fa fa-chevron-left" /> </button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onClick={goPrev}> <i className="fa fa-chevron-right" /> </button>
-           </div>
+          </div>
         </div>
     </section>
   )

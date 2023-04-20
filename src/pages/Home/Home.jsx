@@ -34,7 +34,7 @@ const Home = () => {
         <Know />
         <Ideas />
         <Testimonial />
-        <Awards />        
+        <Awards />
         {/* <Process /> */}
         <Contact />
     </div>

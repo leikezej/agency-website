@@ -1,0 +1,41 @@
+.about__wrapper {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.about__title {
+   text-transform: uppercase;
+   color: blue;
+   font-size: 1rem;
+   letter-spacing: .1rem;
+}
+
+.about__text1 {
+    margin-top: 2rem;
+    font-weight: bolder;
+}
+
+.about__text2 {
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+.about__left {
+   margin-left: 150px;
+}
+
+.about__right img {
+     height: 300px;
+     width: 500px;
+     /* margin-left: 100px; */
+}
+
+.about__divider {
+  height: 5px;
+  margin-top: 2rem;
+  width: 5%;
+  background: linear-gradient(to left, #00d0f9, #0674fd);
+}

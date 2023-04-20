@@ -1,132 +1,155 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
-import logo from "../../assets/logo-v2.png";
+import logo from "../../assets/logo1.png";
+// import logo2 from "../../assets/logo-v2.png";
 
-const Navbar = () => {
-  /*============ Toggle  Menu======== */
-  const [Toggle, showMenu] = useState(false);
-  const [activeNav, setActiveNav] = useState("#home");
+const NavBar = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.pageYOffset > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navbarStyle = {
+    backgroundColor: isScrolled ? '#666' : '#fff',
+    color: isScrolled ? '#333' : '#fff',
+    transition: 'background-color 0.5s ease',
+  };
 
   return (
-  <header className="header">
-    <nav className="nav container">
-
-
-    <div className={Toggle ? "nav__menu show-menu" :
-  "nav__menu"}>
-      <ul className="nav__list grid">
-          <li className= "nav__item">
-          <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? 
-            "nav__link active-link" : "nav__link"}>
-          <i className="uil uil-estate nav__icon"></i>Home
-          </a>
-        </li>
-
-        <li className= "nav__item">
-          <a
-            href="#services"
-            onClick={() => setActiveNav("#services")}
-            className={activeNav === "#services" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>Services
-          </a>
-        </li>
-
-        <li className= "nav__item">
-          <a
-            href="#portfolio"
-            onClick={() => setActiveNav("#portfolio")}
-            className={activeNav === "#portfolio" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>Portfolio
-          </a>
-        </li>
-
-        <li className= "nav__item">
-          <a
-            href="#technology"
-            onClick={() => setActiveNav("#technology")}
-            className={activeNav === "#technology" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>Technology
-          </a>
-        </li>
-
-          <img src={logo} alt="" className="nav__logo" />
-
-
-        <li className= "nav__item">
-          <a
-            href="#industry"
-            onClick={() => setActiveNav("#industry")}
-            className={activeNav === "#industry" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>Industry
-          </a>
-        </li>
-
-        <li className= "nav__item">
-          <a
-            href="#about"
-            onClick={() => setActiveNav("#about")}
-            className={activeNav === "#about" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>AboutUs
-          </a>
-        </li>
-
-        <li className= "nav__item">
-          <a
-            href="#testimonial"
-            onClick={() => setActiveNav("#testimonial")}
-            className={activeNav === "#testimonial" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>Testimonial
-          </a>
-        </li>
-
-        <li className= "nav__item">
-          <a
-            href="#career"
-            onClick={() => setActiveNav("#career")}
-            className={activeNav === "#career" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>Career
-          </a>
-        </li>
-
-
-        <li className= "nav__item">
-          <a
-            href="#contact"
-            onClick={() => setActiveNav("#contact")}
-            className={activeNav === "#contact" ?
-            "nav__link active-link" : "nav__link"}
-          >
-          <i className="uil uil-estate nav__icon"></i>Contact
-          </a>
-        </li>
-      </ul>
-
-
-      <i class="uil uil-times nav__close" onClick={() =>
-        showMenu(!Toggle)}></i>
-    </div>
-<div className="nav__toggle" onClick={() => showMenu
-  (!Toggle)}>
-      <i class="uil uil-apps"></i>
-    </div>
-  </nav>
-  </header>
+    // <nav className="navbar">
+    <nav style={navbarStyle} className="navbar">
+      <div className="navbar-container">
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/services"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Services
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/portfolio"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Portfolio
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/technology"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Technology
+            </NavLink>
+          </li>
+          <NavLink exact to="/process" className="nav-logo">
+            <img src={logo} alt="" />
+            {/* BUGTECH
+          <i className="fas fa-code"></i> */}
+        </NavLink>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/industry"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Industry
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/about"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              About Us
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/testimonial"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Testimonial
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/career"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Career
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/contact"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+        <div className="nav-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
+      </div>
+    </nav>
   );
-};
+}
 
-export default Navbar;
+export default NavBar;

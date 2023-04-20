@@ -26,20 +26,21 @@
 }
 
 .industry__card {
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .industry__card {
     /* border: 1px solid red; */
-    height: 20vh;
+    /* height: 20vh; */
     /* width: 30%; */
-    padding: 1rem;
+    /* padding: 1rem; */
     /* border-right: 1px solid #ccc; */
 }
 
 .industry__card:hover {
     /*border: none;
-    */border-bottom: 5px solid blue;
+    */
+    border-bottom: 5px solid #00d0f9;
     transition: .3s ease-in-out ;
     -webkit-transition: .3s ease-in-out ;
     -moz-transition: .3s ease-in-out ;
