@@ -3,7 +3,12 @@
 }
 
 .team__subtitle {
-   text-align: center;
+    font-size: 6rem;
+    font-weight: bolder;
+    text-align: center;
+    background: -webkit-linear-gradient(#00d0f9, #0674fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .team__title {
