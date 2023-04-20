@@ -32,7 +32,6 @@ const Contact = () => {
           <div className="contact__box-right">
               <h3 className="contact__second-title">To get your <i>concerns</i> underway, <br />simply <i>contact</i> us!</h3>
               <div className="contact__divider"></div>
-             <br />
              <div className="left__box1">
               <h4>In Australia 🇦🇺 </h4>
               <ul>
