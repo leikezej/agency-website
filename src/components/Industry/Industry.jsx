@@ -26,7 +26,7 @@ our software development expertise in modern methodologies and <mark> best pract
               <p>Market Systems</p>
             </div>
             <div className="industry__card">
-              <img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/256/external-ads-ads-icongeek26-outline-colour-icongeek26-8.png" alt="" />
+              <img src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/256/external-banner-passive-income-xnimrodx-lineal-gradient-xnimrodx.png" alt="" />
               <p>Marketing & AdTech</p>
             </div>
         </div>

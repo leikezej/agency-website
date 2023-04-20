@@ -1,12 +1,12 @@
-import React, {  useState } from 'react';
+import React from 'react';
 import './contact.css';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-  // const dispatch = useDispatch();
-  const [contacts, setContacts] = useState([]);
-  const [values, setValues] = useState({});
+  // const dispatch = useDisp atch();
+  // const [contacts, setContacts] = useState([]);
+  // const [values, setValues] = useState({});
 
   const handleEmail = (e) => {
     e.preventDefault();
