@@ -33,8 +33,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
  
 .contact__title {
     text-align: start;
@@ -63,7 +61,7 @@
 
 .contact__box-left {
     width: 100%;
-    height: 75vh;
+    height: 50vh;
     /* border: 1px solid blue; */
     text-align: center;
     margin: 0 auto;
@@ -116,8 +114,8 @@
 }
 
 .left__box1 {
-    padding: 1px;
-    margin: 1px;
+    padding: .5px;
+    margin: .5px;
     margin-left: 15px;
     font-size: 1.5rem;
 }
