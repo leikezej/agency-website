@@ -20,13 +20,12 @@ to collaborate with <mark>our partners</mark>.</h2>
         <br />
         <div className="divider"></div>
         <br />
-        
-        
         <div class="portfolio__wrapper">
           <div className="portfolio__left">
           <div className="portfolio__image">
               <img src={img1} alt="" />
               <div class="overlay">
+              <i className="fa fa-lock" /
                 <div class="text">
                     <p className="image__title">Mobile App</p>
                     <span className="image__description">SEA Top E-Scooter Tracking Mobile App</span>

@@ -1,6 +1,8 @@
 import './App.css';
 
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
+
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -33,6 +35,7 @@ function App() {
 
         <Route path="/process" element={<Process/>} />
       </Routes>
+      <ScrollToTop smooth color="#00d0f9" />
       <Footer />
     </>
   );

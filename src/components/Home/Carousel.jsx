@@ -16,7 +16,7 @@ const Carous = () => {
 for Australia
         </h1>
         <h3 className="home__subtitle">Turning Great Ideas Into Digital Products</h3>
-      <Carousel className="carousel__container">
+      <Carousel className="carousel__container" showArrows={false} autoPlay={true} infiniteLoop={true}>
           <div>
               <img src={img1} alt="img1" />
           </div>

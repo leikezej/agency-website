@@ -1,42 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
 import logo from "../../assets/logo1.png";
 // import logo2 from "../../assets/logo-v2.png";
 
-const NavBar = () => {
+function NavBar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
-  
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    function handleScroll() {
-      if (window.pageYOffset > 0) {
-        setIsScrolled(true);
+  const [color, setColor] = useState(false)
+  const changeColor =() => {
+      if(window.scrollY >= 100) {
+          setColor(true)
       } else {
-        setIsScrolled(false);
+          setColor(false)
       }
-    }
+  }
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const navbarStyle = {
-    backgroundColor: isScrolled ? '#666' : '#fff',
-    color: isScrolled ? '#333' : '#fff',
-    transition: 'background-color 0.5s ease',
-  };
+  window.addEventListener('scroll', changeColor)
 
   return (
-    // <nav className="navbar">
-    <nav style={navbarStyle} className="navbar">
+    <nav className={color ? 'navbar navbar-bg' : 'navbar'}>
       <div className="navbar-container">
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">

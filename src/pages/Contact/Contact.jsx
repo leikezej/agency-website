@@ -20,12 +20,17 @@ const Contact = () => {
   return (
     <section className="contact__wrapper">
       <div className="contact__title-wrap">
-          <h1 className="contact__title">Contact</h1>
+          {/* <h1 className="contact__title">Contact</h1> */}
+          {/* <p>contact us</p> */}
+          
+          <div className="text1">Contact</div>
+         <div className="text2">Contact Us</div>
       </div>
+
 
       <div className="contact__container">
           <div className="contact__box-right">
-              <h3 className="contact__second-title">To get your concerns underway, <br />simply contact us!</h3>
+              <h3 className="contact__second-title">To get your <i>concerns</i> underway, <br />simply <i>contact</i> us!</h3>
               <div className="contact__divider"></div>
              <br />
              <div className="left__box1">
@@ -57,7 +62,7 @@ const Contact = () => {
             <div className="captcha__box">
               <input type="checkbox" />&nbsp;
               <p className="captcha__text">I'm not a robot</p>&nbsp;&nbsp;&nbsp;
-              <img src="https://img.icons8.com/external-sbts2018-flat-sbts2018/1x/external-captcha-ecommerce-basic-1-sbts2018-flat-sbts2018.png" alt="captcha" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/640px-RecaptchaLogo.svg.png" alt="captcha" />
             </div>
             
             <button type="submit">Send Message</button>

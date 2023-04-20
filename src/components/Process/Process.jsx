@@ -2,7 +2,11 @@ import React from 'react'
 
 const Process = () => {
   return (
-    <div>Process</div>
+    <div>
+      <h1>Process</h1>
+      <h1>Process</h1>
+      <h1>Process</h1>
+    </div>
   )
 }
 

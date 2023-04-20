@@ -30,6 +30,7 @@ const Team = () => {
                 <img width="100%" src={team2} alt="" />
                 <h1>Pete D.</h1>
                 <h3>Technical Manager</h3>
+                <br />
             </div>
           </Carousel.Item>
           <Carousel.Item>
