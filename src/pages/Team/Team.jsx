@@ -11,7 +11,6 @@ import "swiper/css/pagination";
 const Team = () => {
   return (
       <section className="team__wrapper">
-        <h1>My Clients Say</h1>
         <h3 className="team__subtitle"> Group Members </h3>
         <h1 className="team__title"> Meet with our <mark>management</mark> team </h1>
         <br />
