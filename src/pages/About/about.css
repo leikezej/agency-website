@@ -3,7 +3,8 @@
     /* border: 1px solid red; */
     display: flex;
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .about__title {
@@ -24,12 +25,28 @@
 }
 
 .about__left {
-   margin-left: 150px;
+   /* margin-left: 150px; */
+   /* border: 1px solid red; */
+   width: 50%;
+   margin: 1rem;
+   padding: 1rem;
+   word-break: break-all;
 }
 
+.about__right {
+    /* margin-left: 150px; */
+   /* border: 1px solid red; */
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+ }
+
 .about__right img {
-     height: 300px;
-     width: 500px;
+    width: 100%;
+    height: 100%;
+    
+     /* height: 300px; */
+     /* width: 500px; */
      /* margin-left: 100px; */
 }
 
