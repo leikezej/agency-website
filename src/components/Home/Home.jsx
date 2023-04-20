@@ -15,13 +15,12 @@ import Know from "../../components/Know/Know";
 import Testimonial from "../Testimonial/Testimonial";
 import Ideas from "../../components/Ideas/Ideas";
 import Awards from "../../components/Awards/Awards";
-// import Process from "../../components/Process/Process";
+import Process from "../../components/Process/Process";
 import Contact from "../../pages/Contact/Contact";
 
 const Home = () => {
-
   return (
-    <div className="home__wrapper">
+    <div>
         <Carousel />
         <Services />
         <ServiceSlider />
@@ -34,8 +33,8 @@ const Home = () => {
         <Know />
         <Ideas />
         <Testimonial />
-        <Awards />        
-        {/* <Process /> */}
+        <Awards />
+        <Process />
         <Contact />
     </div>
   )
