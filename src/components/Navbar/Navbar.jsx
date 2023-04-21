@@ -58,7 +58,7 @@ const NavBar = () => {
               Technology
             </NavLink>
           </li>
-          <NavLink exact to="/process" className="nav-logo">
+          <NavLink exact to="/profile" className="nav-logo">
             <img src={logo} alt="" />
             {/* BUGTECH
           <i className="fas fa-code"></i> */}

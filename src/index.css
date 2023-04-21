@@ -10,27 +10,10 @@ body {
   color: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+html {
+  scroll-behavior: smooth scroll;
+  /* scroll-behavior: smooth; */
 
-mark {
-    /* background: -webkit-linear-gradient(#00d0f9, #0674fd); */
-    /* background: -webkit-linear-gradient(#00d0f9, #0674fd); */
-    font-style: italic;
-    font-weight: 500;
-    color: #00d0f9;
-    background: none;
-    font-family: 'Playfair Display', serif;
-}
-
-.divider {
-  height: 5px;
-  margin-top: 2rem;
-  width: 3%;
-  margin: 0 auto;
-  background: linear-gradient(to left, #00d0f9, #0674fd);
 }
 
 ::-webkit-scrollbar {
@@ -55,10 +38,33 @@ mark {
   -o-border-radius: 10px;
 }
 
-.navbar{
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+mark {
+    /* background: -webkit-linear-gradient(#00d0f9, #0674fd); */
+    /* background: -webkit-linear-gradient(#00d0f9, #0674fd); */
+    font-style: italic;
+    font-weight: 500;
+    color: #00d0f9;
+    background: none;
+    font-family: 'Playfair Display', serif;
+}
+
+.divider {
+  height: 5px;
+  margin-top: 2rem;
+  width: 3%;
+  margin: 0 auto;
+  background: linear-gradient(to left, #00d0f9, #0674fd);
+}
+
+/* .navbar{
   background-color: transparent;
 }
 
 .navbar.colorChange{
   background-color: #000;
-}
+} */

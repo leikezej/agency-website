@@ -17,6 +17,7 @@ import Career from "./components/Office/Office";
 import Contact from "./pages/Contact/Contact";
 
 import Process from "./components/Process/Process";
+import Profile from "./components/Profiles/Profile";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
 
         <Route path="/process" element={<Process/>} />
+        <Route path="/profile" element={<Profile/>} />
       </Routes>
       <ScrollToTop smooth color="#00d0f9" />
       <Footer />
