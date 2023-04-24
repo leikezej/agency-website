@@ -8,15 +8,21 @@ import img1 from "../../assets/carousel/slider1.jpg"
 import img2 from "../../assets/carousel/slider2.jpg"
 import img3 from "../../assets/carousel/slider3.jpg"
 
-const Carous = () => {
+const ImageCarousel = () => {
   return (
     <>
-        <h1 className="home__title">
+        <h5 className="home__title">
         A Leading Software Product Studio<br />
 for Australia
-        </h1>
+        </h5>
         <h3 className="home__subtitle">Turning Great Ideas Into Digital Products</h3>
-      <Carousel className="carousel__container">
+      <Carousel
+        className="carousel__container"
+        autoPlay
+        infiniteLoop
+        showThumbs={false}
+        showArrows={true}
+      >
           <div>
               <img src={img1} alt="img1" />
           </div>
@@ -31,4 +37,4 @@ for Australia
   )
 }
 
-export default Carous;
+export default ImageCarousel;
