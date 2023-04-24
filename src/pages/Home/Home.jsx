@@ -10,6 +10,7 @@ import Technology from "../../pages/Technology/Technology";
 import AboutUs from "../../pages/About/About";
 import Office from "../../components/Office/Office";
 import Industry from "../Industry/Industry";
+// import Team from "../../components/Team/Team";
 import Team from "../../pages/Team/Team";
 import Know from "../../components/Know/Know";
 import Testimonial from "../Testimonial/Testimonial";

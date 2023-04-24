@@ -3,6 +3,7 @@ import img2 from "./assets/team/jaybee.png";
 import img3 from "./assets/team/jep.jpg";
 import img4 from "./assets/team/brix.jpg";
 import img5 from "./assets/team/mark.jpg";
+import img6 from "./assets/team/mochie.jpg";
 
 import test1 from "./assets/testimonials/test1.png";
 import test2 from "./assets/testimonials/test2.png";
@@ -17,7 +18,7 @@ export const team = [
         position: "Project Manager",
         portfolio: "https://www.facebook.com/profile.php?id=100078541437127",
         facebook: "https://www.facebook.com/profile.php?id=100078541437127",
-        gmail: "https://gitlab.com",
+        gmail: "mailto:https://gitlab.com",
         github: "https://github.com",
         linkedin: "https://www.linkedin.com/in/raymund-gerard-ogsimer-820476156/",
         socials: {
@@ -34,7 +35,7 @@ export const team = [
         position: "Senior Fullstack Developer",
         portfolio: "https://bugtech.solutions/profile",
         facebook: "https://www.facebook.com/jaybeepido/",
-        gmail: "jaybee.aicpa@gmail.com",
+        gmail: "mailto:jaybee.aicpa@gmail.com",
         github: "https://github.com/jGeli",
         linkedin: "https://www.linkedin.com/in/john-benedict-geli/",
         socials: {
@@ -51,7 +52,7 @@ export const team = [
         position: "Weekend Developer",
         portfolio: "https://dazzling-flan-64d2b7.netlify.app/",
         facebook: "https://facebook.com/thebullier",
-        gmail: "jezedevkiel21@gmail.com",
+        gmail: "mailto:jezedevkiel21@gmail.com",
         github: "https://github.com/leikezej",
         linkedin: "https://www.linkedin.com/in/jezekiel-isip-1ab872215/",
         socials: {
@@ -68,7 +69,7 @@ export const team = [
         position: "Frontend Developer",
         portfolio: "https://www.facebook.com/brixxdelute",
         facebook: "https://www.facebook.com/brixxdelute",
-        gmail: "https://gitlab.com",
+        gmail: "mailto:https://gitlab.com",
         github: "https://github.com/brixprojects",
         linkedin: "https://linkedin.com",
         socials: {
@@ -85,7 +86,7 @@ export const team = [
         position: "Backend Developer",
         portfolio: "https://www.facebook.com/throwNewError404",
         facebook: "https://www.facebook.com/throwNewError404",
-        gmail: "https://gitlab.com",
+        gmail: "mailto:https://gitlab.com",
         github: "https://github.com/msa0696",
         linkedin: "https://www.linkedin.com/in/mark-steven-alba-04b369244/",
         socials: {
@@ -95,6 +96,23 @@ export const team = [
           linkedin: "https://linkedin.com"
         }
     },
+    {
+      id: 6,
+      image: img6,
+      name: "Mandrake Marshall Mortini",
+      position: "UI/UX Designer",
+      portfolio: "https://www.facebook.com/3kard",
+      facebook: "https://www.facebook.com/3kard",
+      gmail: "mailto:https://gitlab.com",
+      github: "https://github.com",
+      linkedin: "https://www.linkedin.com",
+      socials: {
+        facebook: "https://facebook.com",
+        gitlab: "https://gitlab.com",
+        github: "https://github.com",
+        linkedin: "https://linkedin.com"
+      }
+  },
 ]
 
 export const testimonials = [
