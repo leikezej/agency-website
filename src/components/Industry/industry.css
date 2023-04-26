@@ -4,7 +4,7 @@
 
 .industry__title {
     color: blue;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: .5rem;
     margin-top: 1.5rem;
@@ -20,8 +20,8 @@
 }
 
 .industry__container p {
-    font-size: 1.2rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 400;
     word-break: break-all;
 }
 

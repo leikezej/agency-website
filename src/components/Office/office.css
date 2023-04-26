@@ -1,5 +1,5 @@
 .office__wrapper {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .office__title {
@@ -7,15 +7,19 @@
 }
 
 .office__image {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin: 0 auto;
     justify-content: center;
-    align-items: center;
     display: flex;
 }
 
 .office__image img {
-    width: 25%;
-    padding: 10px;
+    max-width: 33%;
+    border-radius: 10px;
+    padding: 5px;
     cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }

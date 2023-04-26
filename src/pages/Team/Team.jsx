@@ -1,69 +1,72 @@
 import React from "react";
 import './team.css';
-import Carousel from 'react-grid-carousel'
+import { Link } from "react-router-dom";
+import { team } from "../../dummyData";
+import Carousel from 'react-grid-carousel';
+import { FiFacebook, FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
 
-import team1 from '../../assets/team/team1.jpg';
-import team2 from '../../assets/team/team2.jpg';
-import team3 from '../../assets/team/team3.jpg';
-import team4 from '../../assets/team/team4.jpg';
-import team5 from '../../assets/team/team5.jpg';
-import team6 from '../../assets/team/team6.jpg';
+import  jep  from "../../assets/team/jep.jpg";
 
-const Team = () => {
+function Team ()  {
+    return (
+        <section className="service__wrapper component__space">
+                <h3 className="team__subtitle"> Team Members </h3>
+                <h1 className="team__title"> Meet with our <mark>management</mark> team </h1>
+                <br />
+                <div className="divider"></div>
+                
+                <div className="row">
+                <Carousel cols={4} rows={1} gap={30}
+                autoPlay
+                infiniteLoop
+                showArrows={true}
+                responsiveLayout={[
+              {
+                breakpoint: 1200,
+                cols: 4,
+                gap: 40,
+              },
+              {
+                breakpoint: 768,
+                cols: 3,
+                gap: .5,
+              },
+              {
+                breakpoint: 380,
+                cols: 1,
+                gap: 5
+              }
+            ]}
+            mobileBreakpoint={380}
+            // arrowRight={<ArrowBtn type="right" />}
+            // arrowLeft={<ArrowBtn type="left" />}
+          >
 
-  return (
-    <section className="team__wrapper">
-        <h3 className="team__subtitle"> Group Members </h3>
-        <h1 className="team__title"> Meet with our <mark>management</mark> team </h1>
-        <br />
-        <div className="divider"></div>
-        <Carousel cols={4} rows={1} gap={5} loop>
-          <Carousel.Item>
-            <div className="members__card">
-                <img width="100%" src={team1} alt="" />
-                <h1>Peter H.</h1>
-                <h3>Country Manager</h3>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="members__card">
-                <img width="100%" src={team2} alt="" />
-                <h1>Pete D.</h1>
-                <h3>Technical Manager</h3>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="members__card">
-                <img width="100%" src={team3} alt="" />
-                <h1>Nam H.</h1>
-                <h3>Head Of Production</h3>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="members__card">
-                <img width="100%" src={team4} alt="" />
-                <h1>Nevill Ng.</h1>
-                <h3>President</h3>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="members__card">
-                <img width="100%" src={team5} alt="" />
-                <h1>Yen D.</h1>
-                <h3>HR Manager</h3>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="members__card">
-                <img width="100%" src={team6} alt="" />
-                <h1>Dzung Ph.</h1>
-                <h3>Delivery Manager</h3>
-            </div>
-          </Carousel.Item>
-    </Carousel>
-
-    </section>
-  )
+                    {team.map(({ id, image, name, position, portfolio, facebook, gmail, github, linkedin  }) => {
+      return (
+                <Carousel.Item
+                    key={id}
+                >
+                    <div className="service__box">
+                        <img src={image} alt="" />
+                        <h1 className="">{name}</h1>
+                        <h6 className="">{position}</h6>
+                        <br />
+                        <button><Link className="link_profile" to={portfolio}>Portfolio</Link></button>
+                        <ul className="social__icons">
+                            <a href={facebook}><FiFacebook className="facebook"/></a>
+                            <a href={gmail}><FiMail className="gmail"/></a>
+                            <a href={github}><FiGithub className="github"/></a>
+                            <a href={linkedin}><FiLinkedin className="linkedin"/></a>
+                        </ul>
+                    </div>
+                </Carousel.Item>
+                  );
+                })}
+        </Carousel>
+                    </div>
+        </section>
+    )
 }
 
 export default Team;

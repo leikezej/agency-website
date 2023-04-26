@@ -152,9 +152,9 @@ margin-bottom: var(--mb-3);
   }
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
-}
+} */
 
 /* ::-webkit-scrollbar-track {
   background-color: rgb(0, 214, 0);

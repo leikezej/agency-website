@@ -1,4 +1,8 @@
 import './App.css';
+import { AnimatePresence } from 'framer-motion';
+
+import { Fade } from "react-awesome-reveal";
+import AnimatedPage from "./components/AnimatedPage";
 
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
@@ -17,26 +21,30 @@ import Career from "./components/Office/Office";
 import Contact from "./pages/Contact/Contact";
 
 import Process from "./components/Process/Process";
+import Profile from "./components/Profiles/Profile";
 
 function App() {
   return (
     <>
-        <Navbar />
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/technology" element={<Technology/>} />
-        <Route path="/portfolio" element={<Portfolio/>} />
-        <Route path="/services" element={<Services/>} />
-        <Route path="/industry" element={<Industry/>} />
-        <Route path="/about" element={<About />} />
-        <Route path="/testimonial" element={<Testimonial/>} />
-        <Route path="/career" element={<Career/>} />
-        <Route path="/contact" element={<Contact/>} />
-
-        <Route path="/process" element={<Process/>} />
-      </Routes>
-      <ScrollToTop smooth color="#00d0f9" />
-      <Footer />
+      <AnimatePresence>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/technology" element={<Technology/>} />
+            <Route path="/portfolio" element={<Portfolio/>} />
+            <Route path="/services" element={<Services/>} />
+            <Route path="/industry" element={<Industry/>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/testimonial" element={<Testimonial/>} />
+            <Route path="/career" element={<Career/>} />
+            <Route path="/contact" element={<Contact/>} />
+    
+            <Route path="/process" element={<Process/>} />
+            <Route path="/profile" element={<Profile/>} />
+          </Routes>
+          <ScrollToTop smooth color="#00d0f9" />
+          <Footer />
+      </AnimatePresence>
     </>
   );
 }

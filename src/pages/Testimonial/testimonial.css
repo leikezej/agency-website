@@ -133,3 +133,16 @@ s
   margin-bottom: 3rem;
  }
  
+ .testimonial__date {
+   position: left;
+   align-items: start;
+   text-align: left;
+   float: left;
+   font-size: .6rem;
+   color: #00d0f9;
+   margin-top: .4rem;
+}
+
+.fa {
+  color: #0674fd;
+}

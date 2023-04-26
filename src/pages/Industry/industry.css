@@ -20,12 +20,14 @@
 }
 
 .industry__container p {
-    font-size: 1.2rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 550;
     word-break: break-all;
+    font-style: italic;
 }
 
-.industry__card {
+.industry__card p {
+    font-size: 1rem;
     /* word-break: break-all; */
 }
 
@@ -40,7 +42,7 @@
 .industry__card:hover {
     /*border: none;
     */
-    border-bottom: 5px solid #00d0f9;
+    border-bottom: 3px solid #00d0f9;
     transition: .3s ease-in-out ;
     -webkit-transition: .3s ease-in-out ;
     -moz-transition: .3s ease-in-out ;
@@ -51,4 +53,27 @@
 .industry__card img {
    height: 50px;
    width: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .industry__wrapper {
+     max-width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+  /* .industry__wrapper {
+   max-width: 50%;
+  } */
+  .industry__card p {
+    font-size: .6rem;
+    font-weight: 200;
+  }
+  
+  .industry__card img {
+    height: 45px;
+    width: 45px;
+  }
 }

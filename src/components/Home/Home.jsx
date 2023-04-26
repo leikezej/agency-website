@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './home.css';
 
 import Carousel from "./Carousel";
@@ -18,9 +18,19 @@ import Awards from "../../components/Awards/Awards";
 import Process from "../../components/Process/Process";
 import Contact from "../../pages/Contact/Contact";
 
+import Blogs from "../../components/Projects/Project";
+import Projects from "../../components/News/Blog";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Home = () => {
+  useEffect(() => {
+    document.title = 'Bugtech Devs';
+    AOS.init();
+  }, []);
   return (
-    <div>
+    <div className="">
         <Carousel />
         <Services />
         <ServiceSlider />
@@ -36,6 +46,8 @@ const Home = () => {
         <Awards />
         <Process />
         <Contact />
+        <Blogs />
+        <Projects />
     </div>
   )
 }

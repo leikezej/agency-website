@@ -1,5 +1,7 @@
 import React from "react";
 import './home.css';
+import AnimatedPage from "../../components/AnimatedPage";
+import { Fade } from "react-awesome-reveal";
 
 import Carousel from "./Carousel";
 import Portfolio from "../Portfolio/Portfolio";
@@ -18,26 +20,35 @@ import Awards from "../../components/Awards/Awards";
 // import Process from "../../components/Process/Process";
 import Contact from "../../pages/Contact/Contact";
 
+import Projects from "../../components/Projects/Project";
+import News from "../../components/News/Blog";
+
 const Home = () => {
 
   return (
-    <div className="home__wrapper">
-        <Carousel />
-        <Services />
-        <ServiceSlider />
-        <Portfolio />
-        <Office />
-        <Technology />
-        <Industry />
-        <AboutUs />
-        <Team />
-        <Know />
-        <Ideas />
-        <Testimonial />
-        <Awards />
-        {/* <Process /> */}
-        <Contact />
-    </div>
+    <Fade top distance="100%" duration={500}>
+      <AnimatedPage>
+        <div className="home__wrapper">
+            <Carousel />
+            <Services />
+            <ServiceSlider />
+            <Portfolio />
+            <Office />
+            {/* <News /> */}
+            <Technology />
+            <Industry />
+            <AboutUs />
+            <Team />
+            <Know />
+            <Ideas />
+            <Testimonial />
+            <Awards />
+            {/* <Projects /> */}
+            {/* <Process /> */}
+            <Contact />
+        </div>
+        </AnimatedPage>
+    </Fade>
   )
 }
 

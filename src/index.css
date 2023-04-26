@@ -10,6 +10,34 @@ body {
   color: #000;
 }
 
+html {
+  /* scroll-behavior: smooth scroll; */
+  /* scroll-behavior: smooth; */
+
+}
+
+/* ::-webkit-scrollbar {
+  width: 20px;
+} */
+
+/* ::-webkit-scrollbar-track {
+  background-color: rgb(0, 214, 0);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+} */
+
+/* ::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 54, 232);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+} */
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -33,32 +61,57 @@ mark {
   background: linear-gradient(to left, #00d0f9, #0674fd);
 }
 
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* ::-webkit-scrollbar-track {
-  background-color: rgb(0, 214, 0);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-} */
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 54, 232);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.navbar{
+/* .navbar{
   background-color: transparent;
 }
 
 .navbar.colorChange{
   background-color: #000;
+} */
+@media only screen and (max-width: 768px) {
+     .col__2 {
+      max-width: 100%;
+     }
+}
+ 
+.col__3 {
+   max-width: 33.333333%;
+   display: flex;
+   padding: 20px;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 20px;
+}
+
+.component__space {
+   padding: 100px 0px; 
+}
+
+.relative {
+   position: relative;
+}
+
+.absolute {
+   position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+     .col__3 {
+      max-width: 50%;
+     }
+     
+}
+
+@media only screen and (max-width: 425px) {
+   .col__3 {
+    max-width: 100%;
+   }
+   
+}
+.col__2{
+   max-width: 50%;
+   display: flex;
+   padding: 20px;
+   justify-content: center;
+   flex-direction: column;
 }

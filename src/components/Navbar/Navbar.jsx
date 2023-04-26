@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
@@ -9,34 +9,9 @@ const NavBar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
-  
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    function handleScroll() {
-      if (window.pageYOffset > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const navbarStyle = {
-    backgroundColor: isScrolled ? '#666' : '#fff',
-    color: isScrolled ? '#333' : '#fff',
-    transition: 'background-color 0.5s ease',
-  };
 
   return (
-    // <nav className="navbar">
-    <nav style={navbarStyle} className="navbar">
+    <nav className="navbar">
       <div className="navbar-container">
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
@@ -83,7 +58,7 @@ const NavBar = () => {
               Technology
             </NavLink>
           </li>
-          <NavLink exact to="/process" className="nav-logo">
+          <NavLink exact to="/profile" className="nav-logo">
             <img src={logo} alt="" />
             {/* BUGTECH
           <i className="fas fa-code"></i> */}

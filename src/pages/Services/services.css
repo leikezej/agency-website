@@ -14,8 +14,6 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
 }
 
 .services__cards > * {
@@ -23,7 +21,7 @@
 }
 
 .services__cards {
-  width: 32%;
+  width: 30%;
   height: 38vh;
   position: relative;
   background: #f1f1f1  ;
