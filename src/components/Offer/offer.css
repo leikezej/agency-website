@@ -1,0 +1,25 @@
+.text-center {
+    /* border: 1px solid red; */
+    text-align: center;
+    /* align-items: center; */
+    margin: 10px;
+    max-width: 90%;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 3px #dadce0;
+}
+.text-center img {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.offer__details {
+    margin: 10px;
+    padding: 10px;
+}
+
+.img__con {
+
+}

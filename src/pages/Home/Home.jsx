@@ -22,6 +22,7 @@ import Contact from "../../pages/Contact/Contact";
 
 import Projects from "../../components/Projects/Project";
 import News from "../../components/News/Blog";
+import Offer from "../../components/Offer/Offer";
 
 const Home = () => {
 
@@ -31,7 +32,8 @@ const Home = () => {
         <div className="home__wrapper">
             <Carousel />
             <Services />
-            <ServiceSlider />
+            {/* <ServiceSlider /> */}
+            <Offer />
             <Portfolio />
             <Office />
             {/* <News /> */}

@@ -23,13 +23,13 @@ function About ()  {
                         right off his desk! And it's a funny sort of business to be sitting up 
                         there at your desk, 
                         </p>
-                        {/* <p className="about__text p__color">
+                        <p className="about__text p__color">
                         talking down at your subordinates. I ought to just try 
                         that witht my boss; I'd get kicked out on the spot. 
                         But who knows, maybe that would be the best thing for me. 
                         He'd fall right off his desk! And it's a funny sort of 
                         business to be sitting up there at your desk, talking down at your subordinates.
-                        </p> */}
+                        </p>
                     </div>
                 </div>
                 <div className="col__2">
