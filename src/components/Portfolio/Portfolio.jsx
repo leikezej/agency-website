@@ -9,7 +9,6 @@ import img5 from "../../assets/portfolio/image5.jpg";
 
 // import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
-
 const Portfolio = () => {
   return (
     <>
@@ -44,7 +43,7 @@ to collaborate with <mark>our partners</mark>.</h2>
             </div>
           </div>
     
-          <div className="portfolio__center">
+          {/* <div className="portfolio__center"> */}
             <div className="portfolio__image">
               <img src={img3} alt="" />
                 <div className="overlay">
@@ -54,7 +53,7 @@ to collaborate with <mark>our partners</mark>.</h2>
                   </div>
                 </div>
             </div>
-          </div>
+          {/* </div> */}
     
           <div className="portfolio__right">
               <div className="portfolio__image">

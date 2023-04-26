@@ -11,7 +11,7 @@ const OfferCard = (props) => {
                 {/* <h1 className="text-2xl font-bold">{props.name}</h1> */}
                 <p className="font-light md:text-lg">{props.experience} of experience</p>
                 <p className="font-light md:text-lg">{props.desc}</p>
-                <p className="font-light text-gray-400">{props.desc}</p>
+                {/* <p className="font-light text-gray-400">{props.desc}</p> */}
             </div>
         </div>
       </div>

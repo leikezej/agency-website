@@ -9,7 +9,6 @@
 
 .portfolio__subtitle {
     text-align: center;
-    color: blue;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -28,39 +27,18 @@
 }
 
 .portfolio__left img {
-    border: 1px solid black;
-    height: 30vh;
+    min-height: 40vh;
     width: 100%;
 }
 
 .portfolio__center img {
-    border: 1px solid black;
     width: 100%;
-    height: 70vh;
+    max-height: 50vh;
 }
 
 .portfolio__right img {
-    border: 1px solid black;
-    height: 30vh;
+    min-height: 40vh;
     width: 100%;
-}
-
-.portfolio__left {
-    /* border: 1px solid blue; */
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.portfolio__center   {
-    /* border: 1px solid green; */
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.portfolio__right {
-    /* border: 1px solid orchid; */
-    padding: 1rem;
-    margin: 1rem;
 }
 
 .overlay {
@@ -75,8 +53,7 @@
   margin: 0 auto;
   margin-top: 1.5rem;
   transition: .5s ease;
-  /*background-color: #008CBA;
-  */background-color: rgba(10, 10, 10, 0.9);
+  background-color: rgba(10, 10, 10, 0.9);
   -webkit-transition: .5s ease;
   -moz-transition: .5s ease;
   -ms-transition: .5s ease;

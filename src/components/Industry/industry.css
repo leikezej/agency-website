@@ -3,7 +3,7 @@
 }
 
 .industry__title {
-    color: blue;
+    color: #0674fd;
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: .5rem;
@@ -21,8 +21,12 @@
 
 .industry__container p {
     font-size: 1rem;
-    font-weight: 400;
+    font-family: cursive;
+    /* font-weight: 100; */
+    font-style: italic;
+    /* text-transform: ; */
     word-break: break-all;
+    
 }
 
 .industry__card {
@@ -39,7 +43,7 @@
 
 .industry__card:hover {
     /*border: none;
-    */border-bottom: 5px solid blue;
+    */border-bottom: 5px solid #0674fd;
     transition: .3s ease-in-out ;
     -webkit-transition: .3s ease-in-out ;
     -moz-transition: .3s ease-in-out ;
