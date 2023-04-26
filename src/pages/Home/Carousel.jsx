@@ -7,10 +7,12 @@ import { Carousel } from 'react-responsive-carousel';
 import img1 from "../../assets/carousel/slider1.jpg"
 import img2 from "../../assets/carousel/slider2.jpg"
 import img3 from "../../assets/carousel/slider3.jpg"
+import { Zoom, Roll, Rotate, Flip, Bounce } from 'react-reveal';
 
 const ImageCarousel = () => {
   return (
     <>
+      <Zoom ssrFadeout>
         <h5 className="home__title">
         A Leading Software Distributor in Philippines<br />
         </h5>
@@ -32,6 +34,7 @@ const ImageCarousel = () => {
               <img src={img3} alt="img3" />
           </div>
       </Carousel>
+      </Zoom>
     </>
   )
 }

@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "./slider.css";
 
 import { Pagination } from "swiper";
+import { Zoom, Fade, Roll, Rotate, Flip, Bounce } from 'react-reveal';
 
 const ServiceSlider = () => {
   return (
@@ -42,6 +43,7 @@ const ServiceSlider = () => {
           {serviceSlider.map(({ id, title, description  }) => {
       return (
         <SwiperSlide className="" key={id}>
+        <Bounce left cascade>
           <div className="service__slider">
             <div className="slider__details">
               <h2>{title}</h2>
@@ -49,6 +51,7 @@ const ServiceSlider = () => {
               <p>{description}</p>
             </div>
           </div>
+          </Bounce>
         </SwiperSlide>
               );
             })}
