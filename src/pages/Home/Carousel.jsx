@@ -12,8 +12,7 @@ const ImageCarousel = () => {
   return (
     <>
         <h5 className="home__title">
-        A Leading Software Product Studio<br />
-for Australia
+        A Leading Software Distributor in Philippines<br />
         </h5>
         <h3 className="home__subtitle">Turning Great Ideas Into Digital Products</h3>
       <Carousel

@@ -10,7 +10,6 @@ import Technology from "../../pages/Technology/Technology";
 import AboutUs from "../../pages/About/About";
 import Office from "../../components/Office/Office";
 import Industry from "../Industry/Industry";
-// import Team from "../../components/Team/Team";
 import Team from "../../pages/Team/Team";
 import Know from "../../components/Know/Know";
 import Testimonial from "../Testimonial/Testimonial";
@@ -19,6 +18,8 @@ import Awards from "../../components/Awards/Awards";
 // import Process from "../../components/Process/Process";
 import Contact from "../../pages/Contact/Contact";
 
+import Projects from "../../components/Projects/Project";
+import News from "../../components/News/Blog";
 const Home = () => {
 
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         <ServiceSlider />
         <Portfolio />
         <Office />
+        {/* <News /> */}
         <Technology />
         <Industry />
         <AboutUs />
@@ -36,6 +38,7 @@ const Home = () => {
         <Ideas />
         <Testimonial />
         <Awards />
+        {/* <Projects /> */}
         {/* <Process /> */}
         <Contact />
     </div>

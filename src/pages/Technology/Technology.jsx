@@ -10,7 +10,7 @@ import img4 from "../../assets/tech/tech-img4.png";
 
 const Technology = (props) => {
 return (
-    <div className="tech__wrapper">
+    <section className="tech__wrapper">
         <h1 className="tech__title">Technology</h1>
         <h3 className="tech__subtitle">Our Technologies</h3>
         <center><TextWritter className="tech__text" text="We find solutions, whatever! <mark>Technologies</mark>" /></center>
@@ -21,7 +21,7 @@ return (
             <img src={img3} alt="tech3" />
             <img src={img4} alt="tech4" />
         </div>
-    </div>
+    </section>
     )
 }
 

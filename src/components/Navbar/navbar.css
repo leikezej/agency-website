@@ -1,10 +1,10 @@
 .navbar {
-  background: #f1f1f1;
+  background: #f2f2f2;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -20,15 +20,13 @@
 }
 
 .nav-logo img {
-  color: #00d0f9;
   align-items: center;
-  /* margin-left: 20px; */
   cursor: pointer;
   text-decoration: none;
-  /* font-size: 2rem; */
-  /* flex-grow: 1; */
   height: 100px;
   width: 100px;
+  margin: 10px;
+  padding: 10px;
 }
 
 

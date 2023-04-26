@@ -41,3 +41,16 @@ CSS kicks in within the limits : 768px to 959px
 @media only screen and (min-width: 768px) and (max-width: 959px){
 ...
 }
+
+Technology ✅
+Industry ❎
+AboutUs ❎
+Team ❎
+Know Us ❎
+Testimonials ✅
+Portfolio ❎
+Services ❎
+Sliders ❎
+Awards ❎
+ContactUs ❎
+Footer ❎

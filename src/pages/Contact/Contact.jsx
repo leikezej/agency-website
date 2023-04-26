@@ -1,74 +1,60 @@
-import React from 'react';
+import React from "react";
 import './contact.css';
-import emailjs from '@emailjs/browser';
+import ContactImage from '../../assets/logo-v2.png';
 
-const Contact = () => {
-
-  // const dispatch = useDisp atch();
-  // const [contacts, setContacts] = useState([]);
-  // const [values, setValues] = useState({});
-
-  const handleEmail = (e) => {
-    e.preventDefault();
-    console.log('sending');
-    // dispatch(sendEmail(values))
-    // setValues({})
-    // e.target.reset()
-  };
-
-
-  return (
-    <section className="contact__wrapper">
-      <div className="contact__title-wrap">
-          {/* <h1 className="contact__title">Contact</h1> */}
-          {/* <p>contact us</p> */}
-          
-          <div className="text1">Contact</div>
-         <div className="text2">Contact Us</div>
-      </div>
-
-
-      <div className="contact__container">
-          <div className="contact__box-right">
-              <h3 className="contact__second-title">To get your <i>concerns</i> underway, <br />simply <i>contact</i> us!</h3>
-              <div className="contact__divider"></div>
-             <div className="left__box1">
-              <h4>In Australia 🇦🇺 </h4>
-              <ul>
-                <li><i className="fa fa-home" />&nbsp;&nbsp;<b>Address:</b>&nbsp;Level 11/580 Collins St, Melbourne VIC 3000, Australia</li>
-                <li><i className="fa fa-fax" />&nbsp;&nbsp;<b>Tel:</b>(+61) 414 231 356</li>
-            </ul>
-             </div>
-             <br />
-             <br />
-             <div className="left__box2">
-                <h4>In Vietnam 🇻🇳 </h4>
-                <ul>
-                  <li><i className="fa fa-home" />&nbsp;&nbsp;<b>Address:</b>&nbsp;No 219 Trung Kinh Str, Cau Giay Dist, Ha Noi, Vietnam</li>
-                  <li><i className="fa fa-fax" />&nbsp;&nbsp;<b>Tel:</b>(+84) 24 6654 2283</li>
-                </ul>
-             </div>
-          </div>
-
-          <div className="contact__box-left">
-              <form  ref={emailjs} onSubmit={handleEmail}>
-                <input type="text" placeholder="Your Name" /><br />
-                <input type="email" placeholder="Your Email" /><br />
-                <input type="text" placeholder="Your Phone" /><br />
-                <input type="textarea" placeholder="Message" /><br />
-              </form>
-
-            <div className="captcha__box">
-              <input type="checkbox" />&nbsp;
-              <p className="captcha__text">I'm not a robot</p>&nbsp;&nbsp;&nbsp;
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/640px-RecaptchaLogo.svg.png" alt="captcha" />
+function Contact() {
+    return(
+         <div className="contact component__space" id="Contact">
+            <div className="row">
+                <div className="col__2">
+                    <div className="contact__box">
+                              <div className="text1">Contact</div>
+                            <div className="text2">Contact Us</div>
+                        <br />
+                        <br />
+                        <br />
+                        <div className="contact__meta">
+                            <h1 className=""></h1>
+                            <p className="">
+                                I am available for freelance work. Connect with me vai phone:
+                            </p>
+    
+                        </div>
+                        <div className="input__box">
+                            <input type='text' className="contact name" placeholder="Your name *" />
+                            <input type='text' className="contact email" placeholder="Your Email *" />
+                            <input type='text' className="contact subject" placeholder="Write a Subject *" />
+                            <textarea name='message' id="message" placeholder="Write Your message" ></textarea>
+                            <center><button className="view__more contact pointer btn">Submit</button></center>
+                        </div>
+                    </div>
+                </div>
+                <div className="col__2">
+                    {/* <img src={ContactImage} alt='' className="contact__img" /> */}
+                    <div className="contact__box-right">
+                    <h3 className="contact__second-title">To get your <i>concerns</i> underway, <br />simply <i>contact</i> us!</h3>
+                    <div className="contact__divider"></div>
+                    <div className="left__box1">
+                    <h4>In Australia 🇦🇺 </h4>
+                    <ul>
+                        <li><i className="fa fa-home" />&nbsp;&nbsp;<b>Address:</b>&nbsp;Level 11/580 Collins St, Melbourne VIC 3000, Australia</li>
+                        <li><i className="fa fa-fax" />&nbsp;&nbsp;<b>Tel:</b>(+61) 414 231 356</li>
+                    </ul>
+                    </div>
+                    <br />
+                    <br />
+                    <div className="left__box2">
+                        <h4>In Vietnam 🇻🇳 </h4>
+                        <ul>
+                        <li><i className="fa fa-home" />&nbsp;&nbsp;<b>Address:</b>&nbsp;No 219 Trung Kinh Str, Cau Giay Dist, Ha Noi, Vietnam</li>
+                        <li><i className="fa fa-fax" />&nbsp;&nbsp;<b>Tel:</b>(+84) 24 6654 2283</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
             </div>
-            
-            <button type="submit">Send Message</button>
-          </div>
-      </div>
-    </section>
-  )
+         </div>
+    )
 }
 
 export default Contact;

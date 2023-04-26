@@ -4,7 +4,7 @@ import './industry.css';
 const Industry = () => {
 
   return (
-    <div className="industry__wrapper">
+    <section className="industry__wrapper">
         <h1 className="industry__title">Industry</h1>
        <br />
         <h3>We support you in your <mark>digital journey</mark> with <br />
@@ -49,7 +49,7 @@ our software development expertise in modern methodologies and <mark> best pract
               <p>E-commerce & Retail</p>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
