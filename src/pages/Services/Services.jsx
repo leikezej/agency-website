@@ -28,7 +28,7 @@ const Services = () => {
                       <div class="card__title">Build Product from Scratch
                     </div>
                       <div class="card-text">
-                      From scratch, we can plug into your organization to support you innovate and transform faster.
+                      From scratch, we can plug into your organization.
                       </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const Services = () => {
                   <div class="card-image"></div>
                     <div class="card__title">Extend Production Team</div>
                     <div class="card-text">
-                    If you're short on tech specialists, missing deadlines or going over budget, we're here for you.
+                    If you're short on tech specialists, missing deadlines or going over budget.
                     </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@ const Services = () => {
                   <div class="card-image"></div>
                     <div class="card__title">Manage an Entire Product</div>
                     <div class="card-text">
-                    We deliver world-class software products from initial discovery all the way to deployment and maintenance.
+                    We deliver world-class software products
                     </div>
                 </div>
               </div>
